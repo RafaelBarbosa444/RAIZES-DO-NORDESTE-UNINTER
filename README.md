@@ -8,7 +8,6 @@ Instituição: UNINTER
 
 ## Funcionalidades
 
-- Landing page responsiva
 - Cardápio por unidade
 - Carrinho funcional
 - Cupom promocional SERTAO10
