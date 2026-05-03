@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Raízes do Nordeste | Sabor Nordestino Premium</title>
+
+  <meta
+    name="description"
+    content="Landing page profissional da Raízes do Nordeste, uma experiência gastronômica nordestina moderna, acolhedora e cheia de sabor."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header" id="topo">
+    <div class="container nav">
+      <a href="#topo" class="brand">
+        <span class="brand-icon">RN</span>
+        <span>
+          <strong>Raízes do Nordeste</strong>
+          <small>Culinária regional premium</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <nav class="menu" id="menu">
+        <a href="#sabores">Sabores</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#ambiente">Ambiente</a>
+        <a href="#fidelidade">Fidelidade</a>
+        <a href="#cadastro-lgpd">Cadastro/LGPD</a>
+        <a href="#sabores" class="menu-cta">Ver cardápio</a>
+      </nav>
+
+      <button class="user-chip" id="userChip" type="button" aria-label="Identificar cliente">
+        Olá, visitante
+      </button>
+
+      <button class="cart-open" id="cartOpen" type="button" aria-label="Abrir carrinho">
+        🛒 <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow">Sabor nordestino • Pedido rápido • Experiência premium</span>
+
+          <h1>O Nordeste servido com alma, estética e tecnologia.</h1>
+
+          <p>
+            Uma experiência gastronômica inspirada nas raízes nordestinas, com pratos marcantes,
+            atendimento prático e uma apresentação moderna para quem valoriza sabor, cultura e acolhimento.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#sabores" class="btn btn-primary">Ver pratos especiais</a>
+            <a href="#experiencia" class="btn btn-outline">Conhecer experiência</a>
+          </div>
+
+          <div class="stats">
+            <article>
+              <strong>3</strong>
+              <span>unidades disponíveis</span>
+            </article>
+
+            <article>
+              <strong>10%</strong>
+              <span>OFF com cupom SERTAO10</span>
+            </article>
+
+            <article>
+              <strong>1:1</strong>
+              <span>sementes por real gasto</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-image-card reveal delay-1">
+          <img
+            src="hero-raizes-landing.png"
+            alt="Pratos nordestinos servidos em mesa elegante"
+          />
+
+          <div class="floating-card">
+            <span>Promo do dia</span>
+            <strong>Combo Sertão</strong>
+            <p>Tapioca + bebida tropical com 10% OFF usando o cupom SERTAO10.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature reveal">
+        <span>01</span>
+        <h3>Identidade marcante</h3>
+        <p>Visual inspirado em madeira, barro, palha, luz quente e gastronomia afetiva.</p>
+      </article>
+
+      <article class="feature reveal delay-1">
+        <span>02</span>
+        <h3>Pedido simples</h3>
+        <p>Escolha seus pratos favoritos, acompanhe o resumo no carrinho e finalize o pedido.</p>
+      </article>
+
+      <article class="feature reveal delay-2">
+        <span>03</span>
+        <h3>Fidelidade</h3>
+        <p>Com o programa Sementes Raízes, cada compra aproxima o cliente de novos benefícios.</p>
+      </article>
+    </section>
+
+    <section class="section" id="sabores">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">Sabores da casa</span>
+
+          <h2>Pratos que carregam tradição, textura e memória.</h2>
+
+          <p>
+            Destaques preparados para valorizar ingredientes regionais e transformar cada pedido
+            em uma experiência visual e gastronômica.
+          </p>
+        </div>
+
+        <div class="unit-panel reveal">
+          <div>
+            <span class="eyebrow">Escolha da unidade</span>
+            <h3>Cardápio por unidade</h3>
+            <p>Alguns pratos mudam conforme a unidade selecionada, simulando um cardápio dinâmico.</p>
+          </div>
+
+          <label for="unitSelect">Unidade para retirada</label>
+          <select id="unitSelect">
+            <option value="centro">Unidade Centro</option>
+            <option value="shopping">Unidade Shopping</option>
+            <option value="avenida">Unidade Avenida</option>
+          </select>
+          <small id="unitInfo">Cardápio carregado para a Unidade Centro.</small>
+        </div>
+
+        <div class="dishes">
+          <article class="dish reveal" data-units="centro,shopping,avenida">
+            <div class="dish-img">
+              <img
+                src="tapioca-raizes.png"
+                alt="Tapioca de carne de sol com queijo coalho"
+              />
+            </div>
+
+            <div class="dish-body">
+              <span class="tag">Mais pedido</span>
+              <h3>Tapioca de Carne de Sol</h3>
+
+              <p>
+                Tapioca artesanal com carne de sol, queijo coalho grelhado e sabor de comida feita com história.
+              </p>
+
+              <div class="dish-bottom">
+                <strong>R$ 18,90</strong>
+
+                <button
+                  class="add-cart"
+                  type="button"
+                  data-name="Tapioca de Carne de Sol"
+                  data-price="18.90"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish reveal delay-1" data-units="shopping,avenida">
+            <div class="dish-img">
+              <img
+                src="baiao-raizes.png"
+                alt="Baião de dois com queijo coalho"
+              />
+            </div>
+
+            <div class="dish-body">
+              <span class="tag">Tradicional</span>
+              <h3>Baião de Dois</h3>
+
+              <p>
+                Arroz, feijão, tempero da casa e queijo coalho dourado em uma apresentação premium.
+              </p>
+
+              <div class="dish-bottom">
+                <strong>R$ 24,90</strong>
+
+                <button
+                  class="add-cart"
+                  type="button"
+                  data-name="Baião de Dois"
+                  data-price="24.90"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish reveal delay-2" data-units="centro,avenida">
+            <div class="dish-img">
+              <img
+                src="cuscuz-raizes.png"
+                alt="Cuscuz recheado nordestino"
+              />
+            </div>
+
+            <div class="dish-body">
+              <span class="tag">Assinatura</span>
+              <h3>Cuscuz Recheado</h3>
+
+              <p>
+                Cuscuz nordestino com recheio generoso, textura perfeita e finalização de restaurante.
+              </p>
+
+              <div class="dish-bottom">
+                <strong>R$ 15,90</strong>
+
+                <button
+                  class="add-cart"
+                  type="button"
+                  data-name="Cuscuz Recheado"
+                  data-price="15.90"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="experiencia">
+      <div class="container split">
+        <div class="split-text reveal">
+          <span class="eyebrow">Experiência Raízes</span>
+
+          <h2>Mais do que uma lanchonete: uma experiência regional contemporânea.</h2>
+
+          <p>
+            A proposta une sabores tradicionais, atendimento rápido e identidade visual acolhedora.
+            Cada detalhe foi pensado para transmitir conforto, cultura e praticidade.
+          </p>
+
+          <ul class="check-list">
+            <li>Pedido rápido com carrinho funcional</li>
+            <li>Pratos em destaque com apresentação premium</li>
+            <li>Cupom promocional SERTAO10 com 10% de desconto</li>
+            <li>Programa de fidelidade Sementes Raízes</li>
+          </ul>
+        </div>
+
+        <div class="experience-card reveal delay-1">
+          <div>
+            <span>Pedido digital</span>
+            <h3>Escolha, acompanhe e retire.</h3>
+            <p>Uma jornada simples, rápida e intuitiva para facilitar o pedido do cliente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ambiente">
+      <div class="container ambiente-grid">
+        <div class="ambiente-img reveal">
+          <img
+            src="ambiente-raizes.png"
+            alt="Ambiente interno de restaurante nordestino contemporâneo"
+          />
+        </div>
+
+        <div class="ambiente-text reveal delay-1">
+          <span class="eyebrow">Ambiente acolhedor</span>
+
+          <h2>Design inspirado no Nordeste contemporâneo.</h2>
+
+          <p>
+            Tons terrosos, textura artesanal, luz quente e elementos naturais criam uma sensação
+            de conforto, cultura e sofisticação.
+          </p>
+
+          <div class="mini-cards">
+            <article>
+              <strong>Palha</strong>
+              <span>textura artesanal</span>
+            </article>
+
+            <article>
+              <strong>Barro</strong>
+              <span>identidade regional</span>
+            </article>
+
+            <article>
+              <strong>Madeira</strong>
+              <span>aconchego visual</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section loyalty-section" id="fidelidade">
+      <div class="container loyalty">
+        <div class="reveal">
+          <span class="eyebrow">Sementes Raízes</span>
+
+          <h2>Fidelidade que incentiva o cliente a voltar.</h2>
+
+          <p>
+            A cada R$ 1,00 em pedido aprovado, o cliente ganha 1 semente para trocar por benefícios.
+          </p>
+        </div>
+
+        <div class="loyalty-rewards reveal delay-1">
+          <article>
+            <strong>100</strong>
+            <span>sementes</span>
+            <p>R$ 10 de desconto</p>
+          </article>
+
+          <article>
+            <strong>200</strong>
+            <span>sementes</span>
+            <p>Tapioca grátis</p>
+          </article>
+
+          <article>
+            <strong>300</strong>
+            <span>sementes</span>
+            <p>Combo especial</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section privacy-section" id="cadastro-lgpd">
+      <div class="container privacy-grid">
+        <div class="reveal">
+          <span class="eyebrow">Cadastro e LGPD</span>
+          <h2>Dados claros e consentimento antes de finalizar.</h2>
+          <p>
+            Para representar a LGPD na interface, o cliente informa dados básicos e precisa aceitar
+            a política de privacidade antes de concluir o pedido. Os dados são usados apenas para
+            identificação, histórico do pedido e programa Sementes Raízes.
+          </p>
+        </div>
+
+        <form class="privacy-card reveal delay-1" id="lgpdForm">
+          <label>Nome
+            <input type="text" id="customerName" placeholder="Seu nome" />
+          </label>
+
+          <label>E-mail
+            <input type="email" id="customerEmail" placeholder="seuemail@exemplo.com" />
+          </label>
+
+          <label class="check-field">
+            <input type="checkbox" id="lgpdCheck" />
+            <span>Li e aceito a Política de Privacidade e autorizo o uso dos meus dados para cadastro, pedidos e programa de fidelidade.</span>
+          </label>
+
+          <p id="lgpdMessage">O aceite será validado no fechamento do pedido.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">Opiniões dos clientes</span>
+          <h2>Uma experiência pensada para encantar.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial reveal">
+            <p>“Atendimento rápido, comida bem apresentada e aquele sabor nordestino que lembra casa.”</p>
+            <strong>Cliente • Unidade Centro</strong>
+          </article>
+
+          <article class="testimonial reveal delay-1">
+            <p>“A tapioca de carne de sol é muito bem servida. O cupom deixa o pedido ainda melhor.”</p>
+            <strong>Cliente • Unidade Shopping</strong>
+          </article>
+
+          <article class="testimonial reveal delay-2">
+            <p>“Gostei da praticidade do pedido e do programa de sementes para voltar mais vezes.”</p>
+            <strong>Cliente • Unidade Avenida</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="contato">
+      <div class="container cta-box reveal">
+        <div>
+          <span class="eyebrow">Pedido rápido</span>
+
+          <h2>Escolha seu sabor nordestino favorito e finalize seu pedido.</h2>
+
+          <p>
+            Monte seu pedido com os pratos em destaque, acompanhe o resumo no carrinho
+            e aproveite uma experiência simples, bonita e funcional.
+          </p>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="#sabores" class="btn btn-primary">Ver cardápio</a>
+          <button class="btn btn-outline" id="cartOpenBottom" type="button">
+            Abrir carrinho
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+    <div class="cart-head">
+      <div>
+        <span class="eyebrow">Meu pedido</span>
+        <h2>Carrinho</h2>
+      </div>
+
+      <button id="cartClose" type="button" aria-label="Fechar carrinho">
+        ×
+      </button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Seu carrinho está vazio.</p>
+    </div>
+
+    <div class="cart-summary">
+      <p>
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">R$ 0,00</strong>
+      </p>
+
+      <p>
+        <span>Desconto</span>
+        <strong id="cartDiscount">R$ 0,00</strong>
+      </p>
+
+      <p class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </p>
+    </div>
+
+    <div class="coupon-area">
+      <input id="couponInput" type="text" placeholder="Cupom: SERTAO10" />
+      <button id="couponBtn" type="button">Aplicar</button>
+    </div>
+
+    <p class="cart-feedback" id="cartFeedback"></p>
+
+    <button class="checkout-btn" id="checkoutBtn" type="button">
+      Finalizar pedido
+    </button>
+  </aside>
+
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-box">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Fechar pagamento">×</button>
+
+      <span class="eyebrow">Pagamento simulado</span>
+      <h2>Finalizar pedido</h2>
+      <p class="modal-text">Escolha uma forma de pagamento. O envio para o serviço externo é apenas uma simulação visual.</p>
+
+      <div class="payment-options">
+        <label><input type="radio" name="payment" value="Pix" checked /> Pix</label>
+        <label><input type="radio" name="payment" value="Cartão" /> Cartão</label>
+        <label><input type="radio" name="payment" value="Dinheiro na retirada" /> Dinheiro na retirada</label>
+      </div>
+
+      <button class="checkout-btn" id="confirmPaymentBtn" type="button">Confirmar pagamento</button>
+
+      <div class="payment-status" id="paymentStatus">Aguardando confirmação do cliente.</div>
+
+      <div class="order-progress" id="orderProgress">
+        <h3>Status do pedido</h3>
+        <ol>
+          <li class="active">Pedido recebido</li>
+          <li>Em preparo</li>
+          <li>Quase pronto</li>
+          <li>Pronto para retirada</li>
+        </ol>
+        <p id="seedsResult"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="user-modal" id="userModal" aria-hidden="true">
+    <div class="user-modal-box">
+      <button class="modal-close" id="userModalClose" type="button" aria-label="Fechar identificação">×</button>
+
+      <span class="eyebrow">Identificação do cliente</span>
+      <h2>Antes de montar seu pedido</h2>
+      <p class="modal-text">
+        Informe seu nome e e-mail para liberar o carrinho. Nesta simulação, esses dados são usados
+        apenas para identificar o pedido, histórico e programa Sementes Raízes.
+      </p>
+
+      <label>Nome
+        <input type="text" id="modalCustomerName" placeholder="Seu nome" />
+      </label>
+
+      <label>E-mail
+        <input type="email" id="modalCustomerEmail" placeholder="seuemail@exemplo.com" />
+      </label>
+
+      <label class="check-field modal-check">
+        <input type="checkbox" id="modalLgpdCheck" />
+        <span>Li e aceito a Política de Privacidade e autorizo o uso dos meus dados para cadastro, pedidos e programa de fidelidade.</span>
+      </label>
+
+      <p class="cart-feedback" id="userModalFeedback"></p>
+
+      <button class="checkout-btn" id="saveUserBtn" type="button">Continuar para o pedido</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Raízes do Nordeste</strong>
+        <p>Landing page desenvolvida em HTML, CSS e JavaScript.</p>
+      </div>
+
+      <p>Projeto Front-End • UNINTER • RU 4658106</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
